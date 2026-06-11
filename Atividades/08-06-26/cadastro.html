@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Titulo </title>
+    <style>
+        /* aqui é CSS3 (Essa tag é usada para mais linhas */
+        body{
+            background-color: antiquewhite;
+            color: white;
+            font-family: 'Times New Roman';
+        }
+        
+        #cadastro2{
+            color:red;
+        }
+
+        h1{
+            color:blue;
+        }
+
+        input {
+            padding: 40px;
+        }
+
+        button {
+            padding: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Cadastro</h1>
+    <label>Nome:</label>
+    <input type="text" id="name" placeholder="Digite seu nome" />
+
+    <button onclick="validar()">
+        Entrar
+    </button>
+
+    <h1 id="cadastro2">cadastro2</h1>
+
+    <script>
+        // aqui é o javascript antigo //
+
+        // Esta função verifica se o campo nome foi preenchido (Essa tag é usada somente para uma linha //
+        function validar() {
+            let nome = document.getElementById("name").value;
+
+            if (nome == "") {
+                alert("Preencha o nome");
+            } else {
+                alert("Cadastro enviado!");
+            }
+        }
+    </script>
+</body>
+
+</html>
